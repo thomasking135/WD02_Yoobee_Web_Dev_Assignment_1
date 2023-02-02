@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--Header / Meta Information-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Add App</title>
+        <meta name="description" content="addition app">
+        <meta name="keywords" content="add, wish, genie">
+        <meta name="author" content="Thomas King">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="../images/genie.JPG">
+        <link rel="stylesheet" href="../CSS/main.css">
+    </head>
+    <body>
+
+<!-- Navbar -->
+
+<div class="navbar">
+    <div class="container flex">
+     <a id="logo" href="../index.html"><img src="../images/genie.JPG" alt="Genie image logo"></a>
+   </div>
+</div>
+
+<!--Greeting-->
+  <h1>Welcome to Genie! Your wish is my command!</h1>
+  <p>Enter your wish list in the input box below. There's no guarantee they come true but I'll do my best!</p>
+
+<!-- Input Box-->
+<div class="center-form">
+    <form id="Form">
+    <input type="text" name="text" id="inputText" placeholder="Enter your wish!" required>
+    <span id="name_error"></span>
+    </form>
+</div>
+
+<!--Add and Clear Buttons-->
+    <button class="button" id="validate" value="Validate" onclick="pushData(); validateForm()">Add Wish</button>
+    <button class="button-clear" onclick="refreshList()">Clear Wishes</button>
+
+    <ul id="view">
+    </ul>
+
+<!--Footer-->
+    <footer class="footer">
+        <p>Made with 💖 by Thomas</p>
+        <p>©2023</p>
+    </footer>
+        <script src="../JS/main.js"></script>
+    </body>
+</html>
